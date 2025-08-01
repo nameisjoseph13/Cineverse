@@ -10,6 +10,8 @@ export const MovieList = ({apiPath}) => {
 
   const {data: movies, loading, error, title, quote} = useFetch(apiPath, queryTerm);
 
+  console.log("1");
+
   if (loading) {
     return (
       <main className="min-h-screen bg-slate-50 dark:bg-slate-900">
